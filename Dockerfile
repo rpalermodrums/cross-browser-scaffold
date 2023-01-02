@@ -8,6 +8,7 @@ WORKDIR /app
 COPY package.json yarn.lock .yarnrc.yml .pnp* ./
 COPY .yarn ./.yarn
 
+RUN yarn set version berry
 RUN yarn --immutable
 
 COPY src ./src

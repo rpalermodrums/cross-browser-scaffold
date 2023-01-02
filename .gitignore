@@ -1,0 +1,31 @@
+# Environment
+.env
+
+# IDE
+.idea
+*.swp
+
+# Dependencies
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+/node_modules
+# Production
+/dist
+# build directory is deprecated in favor of dist - remove after some time
+/build
+
+# Test Coverage
+/coverage
+
+# OS X
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

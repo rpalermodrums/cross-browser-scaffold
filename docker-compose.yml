@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  plaintiff-portal-client:
+    build:
+      context: ./
+      args:
+        - GIT_REVISION=${REVISION:-latest}
+    environment:
+      - MODE=production
+      - VITE_HOST
+      - VITE_API_HOST
+      - VITE_DATADOG_RUM_APP_ID
+      - VITE_DATADOG_RUM_CLIENT_KEY
+      - VITE_LAUNCHDARKLY_CLIENT_ID
+      - VITE_PORTAL_ENV
+      - SENTRY_AUTH_TOKEN
+    ports:
+      - "80:80"

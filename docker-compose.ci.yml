@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  plaintiff-portal-client:
+    volumes:
+      - .:/app:cached
+      - /app/node_modules

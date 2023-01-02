@@ -25,9 +25,8 @@ function Home () {
         testID='new-event-button'
       />
     </View>
-  )
+  );
 }
-
 
 const router = createBrowserRouter(
   createRoutesFromElements(

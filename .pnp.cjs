@@ -30,6 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/core", "npm:7.20.7"],\
             ["@babel/preset-env", "virtual:e1d5f32200e30f0ddf3e79953cbec16d970e1bcd50319966b6bf745ea12641ec1773fd547b857fddc463fed1417ce829c4b95551d0a39ca3a0bd83e3ba01eede#npm:7.20.2"],\
+            ["@hookform/resolvers", "virtual:e1d5f32200e30f0ddf3e79953cbec16d970e1bcd50319966b6bf745ea12641ec1773fd547b857fddc463fed1417ce829c4b95551d0a39ca3a0bd83e3ba01eede#npm:2.9.10"],\
             ["@types/node", "npm:17.0.45"],\
             ["@types/react", "npm:18.0.26"],\
             ["@types/react-dom", "npm:18.0.10"],\
@@ -2815,6 +2816,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@hapi/topo", "npm:5.1.0"],\
             ["@hapi/hoek", "npm:9.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@hookform/resolvers", [\
+        ["npm:2.9.10", {\
+          "packageLocation": "./.yarn/cache/@hookform-resolvers-npm-2.9.10-940efb71c1-ae3395372d.zip/node_modules/@hookform/resolvers/",\
+          "packageDependencies": [\
+            ["@hookform/resolvers", "npm:2.9.10"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:e1d5f32200e30f0ddf3e79953cbec16d970e1bcd50319966b6bf745ea12641ec1773fd547b857fddc463fed1417ce829c4b95551d0a39ca3a0bd83e3ba01eede#npm:2.9.10", {\
+          "packageLocation": "./.yarn/__virtual__/@hookform-resolvers-virtual-fbef7a6be9/0/cache/@hookform-resolvers-npm-2.9.10-940efb71c1-ae3395372d.zip/node_modules/@hookform/resolvers/",\
+          "packageDependencies": [\
+            ["@hookform/resolvers", "virtual:e1d5f32200e30f0ddf3e79953cbec16d970e1bcd50319966b6bf745ea12641ec1773fd547b857fddc463fed1417ce829c4b95551d0a39ca3a0bd83e3ba01eede#npm:2.9.10"],\
+            ["@types/react-hook-form", null],\
+            ["react-hook-form", "virtual:e1d5f32200e30f0ddf3e79953cbec16d970e1bcd50319966b6bf745ea12641ec1773fd547b857fddc463fed1417ce829c4b95551d0a39ca3a0bd83e3ba01eede#npm:7.41.3"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-hook-form",\
+            "react-hook-form"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -9403,6 +9426,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["plaintiff-portal-client", "workspace:."],\
             ["@babel/core", "npm:7.20.7"],\
             ["@babel/preset-env", "virtual:e1d5f32200e30f0ddf3e79953cbec16d970e1bcd50319966b6bf745ea12641ec1773fd547b857fddc463fed1417ce829c4b95551d0a39ca3a0bd83e3ba01eede#npm:7.20.2"],\
+            ["@hookform/resolvers", "virtual:e1d5f32200e30f0ddf3e79953cbec16d970e1bcd50319966b6bf745ea12641ec1773fd547b857fddc463fed1417ce829c4b95551d0a39ca3a0bd83e3ba01eede#npm:2.9.10"],\
             ["@types/node", "npm:17.0.45"],\
             ["@types/react", "npm:18.0.26"],\
             ["@types/react-dom", "npm:18.0.10"],\

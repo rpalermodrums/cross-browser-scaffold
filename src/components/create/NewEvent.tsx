@@ -2,9 +2,9 @@ import React from 'react';
 import {
   Button,
   Text,
-  TextInput,
   View,
 } from 'react-native';
+import { TextInput } from 'react-native-paper';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -40,10 +40,7 @@ function NewEvent () {
             name='title'
             rules={{ required: 'Title is required' }}
             render={({ field }) => (
-              <>
-                <Text>Title:</Text>
-                <TextInput onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
-              </>
+              <TextInput label='Title' onChangeText={field.onChange} value={field.value} />
             )}
           />
 
@@ -52,21 +49,15 @@ function NewEvent () {
             name='description'
             rules={{ required: 'Description is required' }}
             render={({ field }) => (
-              <>
-                <Text>Description:</Text>
-                <TextInput onChange={field.onChange} numberOfLines={5} style={{ borderWidth: 1, borderColor: 'black' }} multiline />
-              </>
+              <TextInput label='Description' onChangeText={field.onChange} numberOfLines={5} style={{ borderWidth: 1, borderColor: 'black' }} multiline />
             )}
           />
 
           <Controller
             control={control}
-            name='City'
+            name='city'
             render={({ field }) => (
-              <>
-                <Text>City:</Text>
-                <TextInput onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
-              </>
+              <TextInput label='City' onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
             )}
           />
 
@@ -74,55 +65,39 @@ function NewEvent () {
             control={control}
             name='state'
             render={({ field }) => (
-              <>
-                <Text>State:</Text>
-                <TextInput onChange={field.onChange} maxLength={2} style={{ borderWidth: 1, borderColor: 'black' }} />
-              </>
+              <TextInput label='State' onChange={field.onChange} maxLength={2} style={{ borderWidth: 1, borderColor: 'black' }} />
             )}
           />
 
           <Controller
             control={control}
-            name='state'
+            name='venue'
             render={({ field }) => (
-              <>
-                <Text>Venue: (Optional)</Text>
-                <TextInput onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
-              </>
+              <TextInput label='Venue' onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
             )}
           />
 
           <Controller
             control={control}
-            name='Date'
+            name='date'
             render={({ field }) => (
-              <>
-                <Text>Date:</Text>
-                <TextInput onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
-              </>
+              <TextInput label='Date' onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
             )}
           />
 
           <Controller
             control={control}
-            name='Time'
+            name='time'
             render={({ field }) => (
-              <>
-
-                <Text>Time:</Text>
-                <TextInput onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
-              </>
+              <TextInput label='Time' onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
             )}
           />
 
           <Controller
             control={control}
-            name='Notes'
+            name='notes'
             render={({ field }) => (
-              <>
-                <Text>Notes:</Text>
-                <TextInput onChange={field.onChange} numberOfLines={5} style={{ borderWidth: 1, borderColor: 'black' }} multiline />
-              </>
+              <TextInput label='Notes' onChange={field.onChange} numberOfLines={5} style={{ borderWidth: 1, borderColor: 'black' }} multiline />
             )}
           />
 

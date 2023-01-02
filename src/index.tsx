@@ -1,5 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { Provider as PaperProvider } from 'react-native-paper';
 
 import App from './App';
 
@@ -8,6 +9,8 @@ import App from './App';
     root = createRoot(container);
 
   root.render(
-    <App />,
+    <PaperProvider>
+      <App />
+    </PaperProvider>,
   );
 })();

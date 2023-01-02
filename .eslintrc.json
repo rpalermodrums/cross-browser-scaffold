@@ -23,6 +23,8 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "space-before-function-paren": [0],
+        "jsx-quotes": ["error", "prefer-single"],
         "no-shadow": "off",
         "@typescript-eslint/no-shadow": ["error"],
         "react/jsx-filename-extension": [0],

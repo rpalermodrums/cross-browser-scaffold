@@ -23,6 +23,7 @@
     "zod": "^3.20.2"
   },
   "scripts": {
+    "dev": "vite",
     "start": "vite dev",
     "start:prod": "vite preview",
     "build": "vite build",

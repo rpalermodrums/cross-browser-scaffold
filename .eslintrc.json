@@ -38,12 +38,12 @@
             "error",
             "always",
             {
-              "js": "never",
-              "jsx": "never",
-              "ts": "never",
-              "tsx": "never"
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
             }
-          ],
+        ],
         "one-var": ["error", "consecutive"],
         "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
         "eol-last": ["error", "always"],

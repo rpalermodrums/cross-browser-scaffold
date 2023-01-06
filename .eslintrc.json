@@ -1,63 +1,71 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "react-native/react-native": true
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "react-native/react-native": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb/hooks"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "plugin:react/recommended",
-        "airbnb",
-        "airbnb/hooks"
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-native",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "space-before-function-paren": [0],
+    "jsx-quotes": ["error", "prefer-single"],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "react/jsx-filename-extension": [0],
+    "react/no-array-index-key": 0,
+    "react/no-unescaped-entities": [0],
+    "react/require-default-props": 0,
+    // following 2 for react-hook-form
+    "react/jsx-props-no-spreading": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "import/extensions": [
+      "error",
+      "always",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
     ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "react-native",
-        "@typescript-eslint"
+    "one-var": ["error", "consecutive"],
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+    "eol-last": ["error", "always"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["src/__tests__/**/*", "src/__testutils__/**/*"] }
     ],
-    "rules": {
-        "space-before-function-paren": [0],
-        "jsx-quotes": ["error", "prefer-single"],
-        "no-shadow": "off",
-        "@typescript-eslint/no-shadow": ["error"],
-        "react/jsx-filename-extension": [0],
-        "react/no-array-index-key": 0,
-        "react/no-unescaped-entities": [0],
-        "react/require-default-props": 0,
-        // following 2 for react-hook-form
-        "react/jsx-props-no-spreading": 0,
-        "jsx-a11y/label-has-associated-control": 0,
-        "import/extensions": [
-            "error",
-            "always",
-            {
-                "js": "never",
-                "jsx": "never",
-                "ts": "never",
-                "tsx": "never"
-            }
-        ],
-        "one-var": ["error", "consecutive"],
-        "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
-        "eol-last": ["error", "always"],
-        "import/no-extraneous-dependencies": [
-            "error",
-            { "devDependencies": ["src/__tests__/**/*", "src/__testutils__/**/*"] }
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": [
+          "react-native"
         ]
-    },
-    "settings": {
-        "import/resolver": {
-            "node": {
-                "extensions": [".js", ".jsx", ".ts", ".tsx"],
-                "paths": ["src"]
-            }
-        }
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".android.js, .ios.js"],
+        "moduleDirectory": ["src", "node_modules"]
+      }
     }
+  }
 }

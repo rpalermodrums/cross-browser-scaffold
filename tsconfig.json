@@ -2,10 +2,9 @@
   "compilerOptions": {
     "isolatedModules": true,
     "esModuleInterop": true,
-    "jsx": "react-native",
+    "jsx": "react-jsx",
     "baseUrl": "src",
-    "strict": true,
-    "alwaysStrict": false,                 /* Parse in strict mode and emit "use strict" for each source file. */
+    "strict": true
   },
   "include": ["src"]
 }

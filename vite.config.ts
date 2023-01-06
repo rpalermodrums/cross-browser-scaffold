@@ -30,5 +30,24 @@ export default defineConfig(() => ({
       resolveExtensions: extensions,
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ['react'],
+          'react-dom': ['react-dom'],
+          'react-hook-form': ['react-hook-form'],
+          'react-native-web': ['react-native-web'],
+          'react-native-paper': ['react-native-paper'],
+          'react-router-dom': ['react-router-dom'],
+          'react-router': ['react-router'],
+          zod: ['zod'],
+        },
+      },
+    },
+  },
+  sourcemap: true,
+  logLevel: 'info',
+  mode: 'production',
   plugins: [react()],
 }));

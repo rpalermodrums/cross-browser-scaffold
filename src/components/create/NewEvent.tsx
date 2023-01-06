@@ -1,18 +1,17 @@
 import React from 'react';
 import {
-  Button,
-  Text,
   View,
 } from 'react-native';
-import { TextInput } from 'react-native-paper';
+import { TextInput, Button, Text } from 'react-native-paper';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 
 const schema = z.object({
-  title: z.string().min(1, { message: 'Title is required' }),
-  description: z.string().min(1, { message: 'Description is required' }),
-});
+    title: z.string().min(1, { message: 'Title is required' }),
+    description: z.string().min(1, { message: 'Description is required' }),
+  }),
+  PaperTextInput: typeof TextInput = TextInput;
 
 function NewEvent () {
   const {
@@ -39,9 +38,7 @@ function NewEvent () {
             control={control}
             name='title'
             rules={{ required: 'Title is required' }}
-            render={({ field }) => (
-              <TextInput label='Title' onChangeText={field.onChange} value={field.value} />
-            )}
+            render={}
           />
 
           <Controller

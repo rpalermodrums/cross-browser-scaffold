@@ -1,18 +1,11 @@
-# fly.toml file generated for client-portal on 2022-12-21T14:41:30-05:00
+# fly.toml file generated for create-palermo-app on 2023-01-06T09:14:47-05:00
 
-app = "client-portal"
+app = "create-palermo-app"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
 [env]
-  VITE_HOST = ''
-  VITE_API_HOST = ''
-  VITE_DATADOG_RUM_APP_ID = ''
-  VITE_DATADOG_RUM_CLIENT_KEY = ''
-  VITE_LAUNCHDARKLY_CLIENT_ID = ''
-  VITE_PORTAL_ENV = ''
-  SENTRY_AUTH_TOKEN = ''
 
 [experimental]
   allowed_public_ports = []
